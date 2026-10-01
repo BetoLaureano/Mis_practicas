@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Alta</title>
+</head>
+<body>
+
+    <h1>Formulario de Alta</h1>
+
+    <form action="#" method="post">
+        
+        <h3>Nombre y apellidos *</h3>
+        <p>
+            <input type="text" name="nombre"> Nombre 
+            <input type="text" name="primer_apellido"> Primer apellido 
+            <input type="text" name="segundo_apellido"> Segundo apellido
+        </p>
+
+        <h3>Dirección*</h3>
+        <p>
+            <input type="text" name="direccion"> Calle, número, piso, puerta 
+            <input type="text" name="cp"> Código postal 
+            <input type="text" name="municipio"> Municipio 
+            <select name="provincia">
+                <option value="1">Provincia 1</option>
+                <option value="2">Provincia 2</option>
+                <option value="3">Provincia 3</option>
+            </select> Provincia 
+            <select name="pais">
+                <option value="es">España</option>
+            </select> País
+        </p>
+
+        <h3>Email *</h3>
+        <p>
+            <input type="email" name="email">
+        </p>
+
+        <h3>Teléfono *</h3>
+        <p>
+            <input type="tel" name="fijo"> Fijo 
+            <input type="tel" name="movil"> Móvil
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario</title>
+</head>
+<body>
+  <h3>Información sobre el producto</h3>
+
+  <form>
+    <fieldset>
+      <legend>Datos básicos</legend>
+
+      <label>Nombre<br>
+        <input type="text" name="nombre" size="50">
+      </label>
+      <br><br>
+
+      <label>Descripción<br>
+        <textarea name="descripcion" rows="8" cols="50"></textarea>
+      </label>
+      <br><br>
+
+      <label>Foto
+        <input type="file" name="foto">
+      </label>
+      <br><br>
+
+      <label>
+        <input type="checkbox" name="contador"> Añadir contador de visitas
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Datos económicos</legend>
+
+      <label>Precio
+        <input type="text" name="precio" size="6">
+      </label> MXN$
+
+      <label>Impuestos
+        <select name="impuestos">
+          <option value="4">4%</option>
+          <option value="8">8%</option>
+          <option value="18">18%</option>
+        </select>
+      </label>
+      <br><br>Promoción<br>
+      <label><input type="radio" name="promocion" value="ninguno" checked> Ninguno</label><br>
+      <label><input type="radio" name="promocion" value="transporte"> Transporte gratuito</label><br>
+      <label><input type="radio" name="promocion" value="descuento"> Descuento 5%</label>
+    </fieldset>
+  </form>
+</body>
+</html>
